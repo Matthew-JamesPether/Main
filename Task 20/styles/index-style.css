@@ -1,0 +1,411 @@
+body img {
+  width: 100px;
+  height: 100px;
+}
+
+.diet_img {
+  border-radius: 10px;
+  padding: 4px;
+  width: 150px;
+  height: 138px;
+}
+
+#background-image {
+  position: absolute;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.recipe_pictures {
+  justify-self: center;
+  padding-top: 10px;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-area: 2/1/3/2;
+}
+
+.testimonial-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.index-img {
+  padding-top: 10px;
+  width: 500px;
+  height: 250px;
+}
+
+#nutrition-main {
+  background-color: #f6ebbd;
+}
+#nutrition-main .wrapper {
+  padding: 1em 0em 1em 0em;
+}
+#nutrition-main .wrapper div {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-radius: 3px;
+  border-color: rgb(255, 148, 41);
+  margin: 30px 0px 30px 0px;
+  padding-bottom: 10px;
+}
+#nutrition-main .wrapper h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+#recipe-main {
+  background-color: #f6ebbd;
+}
+#recipe-main .wrapper {
+  padding: 1em 0em 1em 0em;
+  display: grid;
+  grid-template-rows: repeat(5, 500px);
+  grid-gap: 1em;
+}
+#recipe-main .wrapper aside {
+  border-style: solid;
+  border-radius: 15px;
+  background-color: rgb(255, 148, 41);
+}
+#recipe-main .wrapper aside h2 {
+  font-family: fantasy;
+}
+#recipe-main .wrapper .carousel-control-prev {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  position: absolute;
+  top: 235px;
+  background-color: black;
+  border-radius: 5px;
+}
+#recipe-main .wrapper .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  position: absolute;
+  top: 235px;
+  background-color: black;
+  border-radius: 5px;
+}
+#recipe-main .wrapper .carousel-item {
+  padding: 10px 60px 20px 60px;
+}
+#recipe-main .wrapper .container_recipe {
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  display: grid;
+  grid-template-rows: 50px 370px;
+  grid-template-columns: 50% 50%;
+}
+#recipe-main .wrapper .container_recipe h2 {
+  font-family: sans-serif;
+  grid-area: 1/1/2/3;
+}
+#recipe-main .wrapper .container_recipe div {
+  grid-area: 2/2/3/3;
+  text-align: center;
+}
+#recipe-main .wrapper .container_recipe div a {
+  color: rgb(17, 7, 193);
+}
+#recipe-main .wrapper #breakfast_menu {
+  grid-row: 1/2;
+}
+#recipe-main .wrapper #lunch_menu {
+  grid-row: 2/3;
+}
+#recipe-main .wrapper #supper_menu {
+  grid-row: 3/4;
+}
+#recipe-main .wrapper #dessert_menu {
+  grid-row: 4/5;
+}
+#recipe-main .wrapper #snacks_menu {
+  grid-row: 5/6;
+}
+
+#reviews-main {
+  background-color: #f6ebbd;
+}
+#reviews-main .wrapper {
+  padding: 1em 0em 1em 0em;
+  display: grid;
+  grid-template-rows: 450px 400px;
+  grid-gap: 1em 0em;
+}
+#reviews-main .wrapper aside {
+  grid-row: 1;
+  display: flex;
+}
+#reviews-main .wrapper aside h1 {
+  width: 60%;
+  height: 100%;
+  border-radius: 40px 0px 0px 40px;
+  font-style: italic;
+  background-color: rgb(255, 148, 41);
+  text-align: center;
+  align-content: center;
+}
+#reviews-main .wrapper aside #subscribe-box {
+  width: 40%;
+  height: 100%;
+  border-left-style: solid;
+  border-color: darkorange;
+  border-width: 3px;
+  border-radius: 0px 40px 40px 0px;
+  background-color: rgb(255, 148, 41);
+  padding-left: 40px;
+  align-content: center;
+}
+#reviews-main .wrapper aside #subscribe-box #radio--container label {
+  padding: 10px;
+}
+#reviews-main .wrapper aside #subscribe-box .form__submit {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(4, 191, 4);
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+}
+#reviews-main .wrapper #articleReview {
+  grid-row: 2;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  left: 400px;
+}
+#reviews-main .wrapper #articleReview #sliderWrapper {
+  display: block;
+  width: 1400px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+#reviews-main .wrapper #articleReview .testimonial {
+  float: left;
+  border-style: solid;
+  border-radius: 0px 40px 0px 40px;
+  padding: 40px 20px 0px 40px;
+  text-align: center;
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+}
+
+#save-main {
+  background-color: #f6ebbd;
+  flex-grow: 1;
+}
+#save-main .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#save-main .wrapper #saved-items-page {
+  grid-column: 1;
+}
+#save-main .wrapper #formContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  grid-column: 2;
+}
+#save-main .wrapper #formContainer #comment {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  resize: none;
+  border-radius: 7px;
+}
+#save-main .wrapper #formContainer button {
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+* {
+  font-family: Georgia;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  border-bottom-style: solid;
+  border-width: 1px;
+  background-color: yellowgreen;
+  border-style: solid;
+  border-radius: 5px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-color: yellowgreen;
+}
+header #heading_container {
+  padding-top: 25px;
+}
+header #heading_container h1 {
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+}
+header #heading_container nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header #heading_container nav li {
+  padding: 20px;
+}
+header #heading_container nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+header #heading_container nav li a:hover {
+  color: rgb(253, 253, 253);
+  text-decoration: underline;
+}
+
+#index-main {
+  flex-grow: 1;
+  position: relative;
+}
+#index-main .wrapper {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+#index-main .wrapper #main_container1 {
+  border-style: solid;
+  border-radius: 15px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: black;
+  padding: 75px;
+  background-color: aqua;
+  grid-area: 1/1/2/2;
+}
+#index-main .wrapper #main_container2 {
+  border-style: solid;
+  border-radius: 15px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: black;
+  padding: 75px;
+  background-color: rgb(250, 250, 27);
+  grid-area: 1/2/3/3;
+}
+#index-main .wrapper #main_container3 {
+  border-style: solid;
+  border-radius: 15px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: black;
+  padding: 75px;
+  background-color: orange;
+  grid-area: 2/1/2/2;
+}
+#index-main .wrapper li {
+  padding-bottom: 10px;
+}
+
+footer {
+  padding: 10px;
+  border-style: solid;
+  border-radius: 5px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-color: grey;
+  background-color: rgb(231, 225, 225);
+}
+footer table th {
+  font-size: 20px;
+  width: 50%;
+}
+footer table tr td {
+  padding: 0px 20px 0px 20px;
+}
+footer table tr td:nth-child(2) {
+  border-style: solid;
+  border-left-width: 2px;
+}
+footer button {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  background-color: yellowgreen;
+  padding: 0px 5px 0px 5px;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  left: 250px;
+  top: 5px;
+}
+
+.submitLike {
+  color: rgba(255, 255, 255, 0);
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 38, 0);
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+}
+
+.liked {
+  background-color: rgb(68, 255, 0);
+  color: black;
+}
+
+.save-btn {
+  background-color: yellowgreen;
+  margin: 10px;
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/*references: https://youtu.be/wRNinF7YQqQ?si=UIyHZJK75A1WR895 
+              https://youtu.be/HGTJBPNC-Gw?si=rbu0uFG7g1TsSNI4
+              https://youtu.be/-C-qR1gziNc?si=NwCgGNe7NBM66Keo
+              CSSNotesForProfessionals.pdf
+              https://youtu.be/EiNiSFIPIQE?si=c2lBGu7iUompz_rG
+              https://youtu.be/phWxA89Dy94?si=Gh65T8CQ29vhbt-U
+              https://youtu.be/Ey-slKj8xA8?si=43ynwUe7q0RXqO2q
+              https://youtu.be/f3uCSh6LIY0?si=AGP8F3Pc3yaYK9Mp*//*# sourceMappingURL=index-style.css.map */

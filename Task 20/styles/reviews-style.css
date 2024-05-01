@@ -1,0 +1,70 @@
+#reviews-main {
+  background-color: #f6ebbd;
+}
+#reviews-main .wrapper {
+  padding: 1em 0em 1em 0em;
+  display: grid;
+  grid-template-rows: 450px 400px;
+  grid-gap: 1em 0em;
+}
+#reviews-main .wrapper aside {
+  grid-row: 1;
+  display: flex;
+}
+#reviews-main .wrapper aside h1 {
+  width: 60%;
+  height: 100%;
+  border-radius: 40px 0px 0px 40px;
+  font-style: italic;
+  background-color: rgb(255, 148, 41);
+  text-align: center;
+  align-content: center;
+}
+#reviews-main .wrapper aside #subscribe-box {
+  width: 40%;
+  height: 100%;
+  border-left-style: solid;
+  border-color: darkorange;
+  border-width: 3px;
+  border-radius: 0px 40px 40px 0px;
+  background-color: rgb(255, 148, 41);
+  padding-left: 40px;
+  align-content: center;
+}
+#reviews-main .wrapper aside #subscribe-box #radio--container label {
+  padding: 10px;
+}
+#reviews-main .wrapper aside #subscribe-box .form__submit {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(4, 191, 4);
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+}
+#reviews-main .wrapper #articleReview {
+  grid-row: 2;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  left: 400px;
+}
+#reviews-main .wrapper #articleReview #sliderWrapper {
+  display: block;
+  width: 1400px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+#reviews-main .wrapper #articleReview .testimonial {
+  float: left;
+  border-style: solid;
+  border-radius: 0px 40px 0px 40px;
+  padding: 40px 20px 0px 40px;
+  text-align: center;
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+}/*# sourceMappingURL=reviews-style.css.map */
