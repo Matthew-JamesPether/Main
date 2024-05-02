@@ -44,7 +44,7 @@ A ScreenShot of where to add comments and where the saved items will be displaye
 ![Screenshot (16)](https://github.com/Matthew-JamesPether/Main/assets/166241830/37973771-dbdf-48f0-9d2a-be960283c71a)
 
 ### Credit
-* [Matthew-James Pether](www.linkedin.com/in/m-j-pether-150793301)
+* [Matthew-James Pether](https://www.linkedin.com/in/m-j-pether-150793301)
 * [HyperionDevelopment Mentors](https://www.hyperiondev.com/)
 
 
