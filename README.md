@@ -5,7 +5,7 @@ This is a website that gives helpful advise on how people can create thier own d
 People can also save recipes and information for later use. The website will also have a like button and a comment section which enables people to share their thoughts on which recipes they like or dislike.
 
 ## Table of Content
-* heading
+* Heading
 * Table of Content
 * Installation
 * Usage
