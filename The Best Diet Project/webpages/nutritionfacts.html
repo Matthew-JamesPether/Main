@@ -1,0 +1,240 @@
+<!--Defines the html version-->
+<!DOCTYPE html>
+
+<!--Opens the web page and "en" declares english as the primary language-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- a link that to the scss style sheet-->
+    <link rel="stylesheet" href="../styles/index-style.css" type="text/css" />
+
+    <!-- External Jquery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Links to google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <!--Links to bootstrap to enable additional functions -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- added the website as the title -->
+    <title>Nutritious Facts</title>
+  </head>
+
+  <!--This will display the content of the website -->
+  <body onload="myLoad()">
+    <header>
+      <!-- header is used to seperate the content inside from the main content -->
+      <img
+        class="diet_img"
+        src="https://www.pngall.com/wp-content/uploads/5/Healthy-Food-Diet-PNG-Image.png"
+        alt="pictue of a Bodybuilding trophy"
+      />
+      <div class="wrapper">
+        <!--Contains references which link to other pages -->
+        <div id="heading_container">
+          <h1>Nutritional Facts</h1>
+          <nav>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="nutritionfacts.html">Nutritious facts</a></li>
+            <li><a href="recipe.html">Nutritious Recipes</a></li>
+            <li><a href="reviews.html">Recipe reviews</a></li>
+            <li><a href="save.html">Saved Items</a></li>
+          </nav>
+        </div>
+      </div>
+      <img
+        class="diet_img"
+        src="https://www.pngall.com/wp-content/uploads/5/Healthy-Food-Diet-PNG-Image.png"
+        alt="pictue of a Bodybuilding trophy"
+      />
+    </header>
+
+    <!--Main is used to contain all the main content  -->
+    <main id="nutrition-main">
+      <div class="wrapper">
+        <!--Seperates the information into different containers -->
+        <div>
+          <h2>Protien Protien Protien!!!</h2>
+          <p>
+            Due to the increasing popularity of high protein diets, new studies
+            have been done seeing the effects on consuming large amounts of
+            protein. Studies show that increase your protein intake can increase
+            your metabolism making it a bit easier to loss fat. Since every cell
+            in your body is made up of protein increasing your protien has also
+            showed to increase organ recovery functionality and bone density.
+          </p>
+          <p>
+            However there is a limit. Just like anything to much can be a bad
+            thing. Due to genetics not everyone can digest large amounts of
+            protien and get all its benefits. Everyone has their own threshold.
+            You can increase this threshold by doing different types of phyical
+            activies which will increase the body not only to recover but grow
+            muscularly
+          </p>
+          <p>
+            And Do not worry there are many Nutritious protein meals that do not
+            consist of any animal meat for you animal lovers.
+          </p>
+          <p>
+            However futher research still needs to be done for more accurate
+            results on protein intake.
+          </p>
+          <button
+            class="save-btn"
+            onclick="saveButton('Protien Protien Protien!!!', 'facts')"
+          >
+            Save for later
+          </button>
+        </div>
+        <div>
+          <h2>Comfortable with Carbs</h2>
+          <p>
+            Just like protein to much carbohydrates can be detremental however
+            to little can be too. Your body loves carbs and has a how biological
+            system just to deal with them. Your body uses carbs to create
+            glucose and is responsible for many functions in the body. One of
+            these functions is a energy source. Your body stores glucose as
+            glycogen and stores this within the muscles and liver to use mainly
+            for quick bursts of energy, when exercising, and hormone control.
+            Any excess carbs will be converted in to fat which can be harmful
+            since to much fat can cause health problems. In some cases people
+            can get genetic defects where their body makes to much fat and ends
+            up not producing enough hormones and the opposite could happen where
+            the body produces to many hormones and does not convert the
+            necessary carbs to fat.
+          </p>
+          <button
+            class="save-btn"
+            onclick="saveButton('Comfortable with Carbs' , 'facts')"
+          >
+            Save for later
+          </button>
+        </div>
+
+        <div>
+          <h2>Fatty Friends</h2>
+          <p>
+            Fats are too very important for your body. Even though your body can
+            convert glucose into fat it is mainly only used for energy. Enable
+            to utilize the full functionality of fats you will need to eat
+            Nutritious fatty foods such as avocardos, dark chocolate, almonds
+            and many more. these fats help can also provide energy mainly for
+            long-durations and small activities such as walking and typing. Fats
+            can also help lubricate joints and cells, acts as an insulater for
+            the body and helps produce important hormones.
+          </p>
+          <button
+            class="save-btn"
+            onclick="saveButton('Fatty Friends', 'facts')"
+          >
+            Save for later
+          </button>
+        </div>
+        <div>
+          <h2>Fruits and Vegg</h2>
+          <p>
+            Fruits and vegtables are not surprisingly very important for your
+            diet. It provides many vitamins and minerals which your body uses to
+            help boost the immune system, support normal growth and development
+            and increases cell productivity. Fruits and veg also are high in
+            dietery fibre which improves gut health which can lead the body to
+            digest food more easily and effectivly. I have seen many people not
+            enjoy fruits and vegtables or get put off by people saying they need
+            to each every fruit and veg on the planet. Luckily this is not true.
+            There is a reason why there is a saying that goes and apple a day
+            keeps the doctor way. All you really need is one type of fruit and
+            one type of vegtable that you like everyday and you would be fine.
+            However a little bit or varity can go a long way, so don't be
+            affraid to experiments and find new fruits and vegtables that you
+            enjoy.
+          </p>
+          <button
+            class="save-btn"
+            onclick="saveButton('Fruits and Vegg', 'facts')"
+          >
+            Save for later
+          </button>
+        </div>
+
+        <div>
+          <h2>The Basic Diet</h2>
+          <p>
+            If you do not know where to start a good diet to follow is a balance
+            diet that suits your needs. Start with trying to eat foods that are
+            from all food groups and it does not really matter if you are
+            prioritize one group more than the others aslong as it is within
+            your calorie intake.
+          </p>
+          <p>
+            The diet I use is a type of high protein diet. I currently do
+            Bodybuilding as a hobbie so my diet is based around what gets me to
+            maximize muscle growth. In my diet I have about 140g - 180g of
+            protein, round about 200g of carbs and about 40g of fat a day. Which
+            is about 1720kals - 1880kals a day. There are some days where I will
+            lower my carb intake and increase my fat intake. I normally do this
+            on days where i go out or when just feel like eating a bit more
+            fatty foods that day.
+          </p>
+
+          <a href="https://youtu.be/8BKbu_s8p1Q?si=xVi3bpynGP66-iMN"
+            >Click here to watch a video on how i calulated my calories</a
+          >
+          <button
+            class="save-btn"
+            onclick="saveButton('The Basic Diet', 'facts')"
+          >
+            Save for later
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer seperates the content within from the main and header -->
+    <footer>
+      <table>
+        <tr>
+          <th>How to contact me:</th>
+          <th>Subcribe to our news letter</th>
+        </tr>
+
+        <tr>
+          <td>
+            <li>E-mail: mjpether7@gmail.com</li>
+            <li>Contact no. : +27 66 222 6211</li>
+            <li>
+              Linkedin:
+              <a href="https://www.linkedin.com/in/m-j-pether-150793301/"
+                >https://www.linkedin.com/in/m-j-pether-150793301/</a
+              >
+            </li>
+          </td>
+          <td>
+            In our news letter you will get e-mailed weekly updates on reviews
+            about new and quick healthy recipes you can enjoy on a day to day
+            bases <a href="reviews.html"><button>SIGN UP</button></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+
+    <!--Links to the javascript file -->
+    <script type="text/javascript" src="../styles/save.js"></script>
+  </body>
+</html>
