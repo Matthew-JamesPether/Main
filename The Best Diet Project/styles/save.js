@@ -1,3 +1,4 @@
+
 //A object constructor for the contact description
 function contactDescription(
   contactName,
@@ -27,7 +28,20 @@ function myLoad() {
     sessionStorage.setItem("typesOfRecipes", JSON.stringify(savedRecipes));
     sessionStorage.setItem("numberofItems", JSON.stringify(savedNum));
     sessionStorage.setItem("hasCodeRunBefore", true);
-  } else {
+    sessionStorage.setItem("hasDaveRunBefore", null);
+  }
+}
+
+//Displays stores data when the save page loads
+function saveLoad() {
+  if (sessionStorage.getItem("hasSaveRunBefore") === null) {
+    sessionStorage.setItem("typesOfContacts", JSON.stringify(savedContacts));
+    sessionStorage.setItem("typesOfArticles", JSON.stringify(savedArticles));
+    sessionStorage.setItem("typesOfFacts", JSON.stringify(savedFacts));
+    sessionStorage.setItem("typesOfRecipes", JSON.stringify(savedRecipes));
+    sessionStorage.setItem("numberofItems", JSON.stringify(savedNum));
+    sessionStorage.setItem("hasDaveRunBefore", true);
+    displayComment();
   }
 }
 
@@ -64,10 +78,10 @@ function saveButton(item, type) {
 
 //A function that displays and stores the users comments
 function commentForm() {
-  let savedComment = document.getElementById("comment").value;
-  sessionStorage.setItem("commentText", savedComment);
+  savedComment = document.getElementById("comment").value;
+  sessionStorage.setItem("commentText", JSON.stringify(savedComment));
   alert("Comment Submitted");
-  console.log(sessionStorage.getItem("commentText"));
+  displayComment();
 }
 
 //A function that stores the contact details
@@ -95,6 +109,28 @@ function selectedRadio() {
     }
   });
   return btnRadio;
+}
+
+//A function that displays the comment submitted
+function displayComment() {
+  let comment = JSON.parse(sessionStorage.getItem("commentText"));
+  console.log(comment);
+  if (comment) {
+    let formContainerHTML = document.getElementById("formContainer");
+
+    let divComment = document.createElement("div");
+    let h2Profile = document.createElement("h2");
+    let pComment = document.createElement("p");
+
+    divComment.className = "commentSection";
+    h2Profile.innerHTML = "Anonymous";
+    pComment.innerHTML = comment;
+
+    divComment.appendChild(h2Profile);
+    divComment.appendChild(pComment);
+
+    formContainerHTML.appendChild(divComment);
+  }
 }
 
 //jQUERY functions
@@ -141,10 +177,7 @@ $(document).ready(function () {
       1000,
       function () {
         currentCard++;
-        if (
-          currentCard ===
-          $("#sliderWrapper #sliderList .slide").length
-        ) {
+        if (currentCard === $("#sliderWrapper #sliderList .slide").length) {
           currentCard = 1;
           $("#sliderWrapper #sliderList").css("margin-left", 0);
         }
@@ -171,5 +204,3 @@ $(document).ready(function () {
              https://youtu.be/WCRi7y6aNrQ?si=iH0gCE5qNfs_5fKN
              https://youtu.be/g_vXSKbfUiQ?si=uAYWloYKxep1bJAp
              https://youtu.be/RxUc6ZWwgfw?si=H8isfEYrV2N39rAe*/
-
-
