@@ -37,7 +37,7 @@
 #reviews-main .wrapper aside #subscribe-box .form__submit {
   width: 100px;
   height: 30px;
-  background-color: rgb(4, 191, 4);
+  background-color: aqua;
   border: none;
   font-weight: bold;
   color: white;
@@ -49,6 +49,7 @@
   height: 400px;
   overflow: hidden;
   margin: 0 auto;
+  background-color: aqua;
 }
 #reviews-main .wrapper #sliderWrapper #sliderList {
   display: block;
@@ -65,5 +66,4 @@
   height: 400px;
   border-radius: 0px 40px 0px 40px;
   padding: 40px 20px 0px 40px;
-  background-color: aqua;
 }/*# sourceMappingURL=reviews-style.css.map */
