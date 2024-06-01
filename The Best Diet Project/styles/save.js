@@ -136,17 +136,14 @@ $(document).ready(function () {
 
   //Creates a repeated slide effect
   setInterval(function () {
-    $("#articleReview #sliderWrapper").animate(
+    $("#sliderWrapper #sliderList").animate(
       { "margin-left": "-=400px" },
       1000,
       function () {
         currentCard++;
-        if (
-          currentCard ===
-          $("#articleReview #sliderWrapper .testimonial").length + 1
-        ) {
+        if (currentCard === $("#sliderWrapper #sliderList .slide").length) {
           currentCard = 1;
-          $("#articleReview #sliderWrapper").css("margin-left", 0);
+          $("#sliderWrapper #sliderList").css("margin-left", 0);
         }
       }
     );
@@ -171,5 +168,3 @@ $(document).ready(function () {
              https://youtu.be/WCRi7y6aNrQ?si=iH0gCE5qNfs_5fKN
              https://youtu.be/g_vXSKbfUiQ?si=uAYWloYKxep1bJAp
              https://youtu.be/RxUc6ZWwgfw?si=H8isfEYrV2N39rAe*/
-
-
