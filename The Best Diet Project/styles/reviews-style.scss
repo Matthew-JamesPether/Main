@@ -58,28 +58,27 @@ $main-colour-yellow: #f6ebbd;
     }
 
     //Styles the article content
-    #articleReview {
+    #sliderWrapper {
       grid-row: 2;
-      overflow: hidden;
       @include box(400px, 400px);
-      position: relative;
-      left: 400px;
+      overflow: hidden;
+      margin: 0 auto;
 
-      #sliderWrapper {
+      #sliderList {
         display: block;
-        @include box(1400px, 400px);
-        margin: 0;
+        @include box(3200px, 400px);
         padding: 0;
-      }
+        margin: 0;
 
-      .testimonial {
-        float: left;
-        border-style: solid;
-        border-radius: 0px 40px 0px 40px;
-        padding: 40px 20px 0px 40px;
-        text-align: center;
-        background-color: aqua;
-        @include box(400px, 400px);
+        .slide {
+          text-align: center;
+          float: left;
+          list-style-type: none;
+          @include box(400px, 400px);
+          border-radius: 0px 40px 0px 40px;
+          padding: 40px 20px 0px 40px;
+          background-color: aqua;
+        }
       }
     }
   }
