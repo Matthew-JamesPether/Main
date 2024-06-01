@@ -141,13 +141,16 @@ $(document).ready(function () {
       1000,
       function () {
         currentCard++;
-        if (currentCard === $("#sliderWrapper #sliderList .slide").length) {
+        if (
+          currentCard ===
+          $("#sliderWrapper #sliderList .slide").length
+        ) {
           currentCard = 1;
           $("#sliderWrapper #sliderList").css("margin-left", 0);
         }
       }
     );
-  }, 4000);
+  }, 3000);
 
   //Hides and shows when the diet_img is clicked
   $(".diet_img").on("click", function () {
@@ -168,3 +171,5 @@ $(document).ready(function () {
              https://youtu.be/WCRi7y6aNrQ?si=iH0gCE5qNfs_5fKN
              https://youtu.be/g_vXSKbfUiQ?si=uAYWloYKxep1bJAp
              https://youtu.be/RxUc6ZWwgfw?si=H8isfEYrV2N39rAe*/
+
+
