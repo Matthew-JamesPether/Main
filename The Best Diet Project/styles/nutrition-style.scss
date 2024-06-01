@@ -1,0 +1,30 @@
+//colour variables that store the exact colours I need
+$main-colour-orange: rgb(255, 148, 41);
+$main-colour-yellow: #f6ebbd;
+
+//gives any element a width and height when excuted
+@mixin box($w-pixels, $h-pixels) {
+  width: $w-pixels;
+  height: $h-pixels;
+}
+
+//Styles the main element in the nutrition.html
+#nutrition-main {
+  background-color: $main-colour-yellow;
+  .wrapper {
+    padding: 1em 0em 1em 0em;
+
+    div {
+      border-bottom-style: solid;
+      border-bottom-width: 5px;
+      border-radius: 3px;
+      border-color: $main-colour-orange;
+      margin: 30px 0px 30px 0px;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: underline;
+    }
+  }
+}

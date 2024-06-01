@@ -1,0 +1,43 @@
+
+//colour variables that store the exact colours I need
+$main-colour-orange: rgb(255, 148, 41);
+$main-colour-yellow: #f6ebbd;
+
+//gives any element a width and height when excuted
+@mixin box($w-pixels, $h-pixels) {
+  width: $w-pixels;
+  height: $h-pixels;
+}
+
+//Styles the main element in the save.html
+#save-main {
+  background-color: $main-colour-yellow;
+  flex-grow: 1;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    #saved-items-page {
+      grid-column: 1;
+    }
+
+    #formContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      grid-column: 2;
+
+      #comment {
+        @include box(400px, 200px);
+        margin: 10px;
+        resize: none;
+        border-radius: 7px;
+      }
+
+      button {
+        background-color: yellow;
+        border-radius: 5px;
+      }
+    }
+  }
+}

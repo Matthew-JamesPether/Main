@@ -1,0 +1,973 @@
+
+<!--Defines the html version-->
+<!DOCTYPE html>
+
+<!--Opens the web page and "en" declares english as the primary language-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- a link that to the scss style sheet-->
+    <link rel="stylesheet" href="../styles/index-style.css" type="text/css" />
+
+    <!-- External Jquery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Links to google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <!--Links to bootstrap to enable additional functions -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- added the website as the title -->
+    <title>Recipes I like</title>
+  </head>
+
+  <!--This will display the content of the website -->
+  <body onload="myLoad()">
+    <!-- header is used to seperate the content inside from the main content -->
+    <header>
+      <img
+        class="diet_img"
+        src="https://www.pngall.com/wp-content/uploads/5/Healthy-Food-Diet-PNG-Image.png"
+        alt="pictue of a Bodybuilding trophy"
+      />
+      <div class="wrapper">
+        <!--Contains references which link to other pages -->
+        <div id="heading_container">
+          <h1>Recipes I Like</h1>
+          <nav>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="nutritionfacts.html">Nutritious facts</a></li>
+            <li><a href="recipe.html">Nutritious Recipes</a></li>
+            <li><a href="reviews.html">Recipe reviews</a></li>
+            <li><a href="save.html">Saved Items</a></li>
+          </nav>
+        </div>
+      </div>
+      <img
+        class="diet_img"
+        src="https://www.pngall.com/wp-content/uploads/5/Healthy-Food-Diet-PNG-Image.png"
+        alt="pictue of a Bodybuilding trophy"
+      />
+    </header>
+
+    <!--Main is used to contain all the main content  -->
+    <main id="recipe-main">
+      <div class="wrapper">
+        <!--Seperates the information into different carousel containers -->
+        <aside id="breakfast_menu" class="carousel slide">
+          <h2>Breakfast recipes</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container_recipe">
+                <h2>Breakfast Crunchwrap Supreme</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://hips.hearstapps.com/hmg-prod/images/breakfast-crunchwrap-supreme-lead-65836b351ced8.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                  alt="Breakfast Crunchwrap Supreme picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>4 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>20 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>1 hr</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>659</p>
+                  <a
+                    href="https://www.delish.com/cooking/recipe-ideas/recipes/a52456/breakfast-crunchwrap-supreme-recipe/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Breakfast Crunchwrap Supreme','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>
+                  Poached eggs with broccoli, tomatoes & wholemeal flatbread
+                </h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/poached-eggs-with-broccoli-tomatoes-wholemeal-flatbread-b4a5caf.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Poached eggs with broccoli, tomatoes & wholemeal flatbread picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>5 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>11 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>383</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/poached-eggs-broccoli-tomatoes-wholemeal-flatbread"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Poached eggs with broccoli, tomatoes & wholemeal flatbread','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Easy protein pancakes</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2021/02/Protein-pancakes-b64bd40.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Easy protein pancakes pictue"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>35 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>437</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/easy-protein-pancakes"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Easy protein pancakes','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Green shakshuka</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/green-shakshuka-d702c5c.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Green shakshuka picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>4 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>35 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>337</p>
+                  <a href="https://www.bbcgoodfood.com/recipes/green-shakshuka"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Green shakshuka','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>
+                  Creamy yogurt porridge with banana, blueberry & almond topping
+                </h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/blueberry-0b4c535.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Creamy yogurt porridge with banana, blueberry & almond topping picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>1 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>6 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>9 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>395</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/creamy-yogurt-porridge-banana-blueberry-almond-topping"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Creamy yogurt porridge with banana, blueberry & almond topping','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Adds button effects to the carousel -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#breakfast_menu"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#breakfast_menu"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </aside>
+
+        <aside id="lunch_menu" class="carousel slide">
+          <h2>Lunch Recipes</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container_recipe">
+                <h2>Chicken satay salad</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-satay-salad-8f5b068.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Chicken satay salad picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>25 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>353</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/chicken-satay-salad"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Chicken satay salad','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Tuna Niçoise protein pot</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/tuna-nicoise-protein-pot-e83c9e6.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Tuna Niçoise protein pot pictue"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>1 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>20 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>298</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/tuna-nicoise-protein-pots"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Tuna Niçoise protein pot','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Scrambled egg & feta hash</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/scrambled-eggs-d82c50e.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Scrambled egg & feta hash picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>1 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>7 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>485</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/scrambled-egg-feta-hash"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Scrambled egg & feta hash','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Healthy tuna lettuce wraps</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/tuna-mayo-wraps-a1f5206.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Healthy tuna lettuce wraps picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>17 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>361</p>
+                  <a href="https://www.bbcgoodfood.com/recipes/tuna-mayo-wraps"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Healthy tuna lettuce wraps','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Steak & broccoli protein pots</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/steak-broccoli-protein-pots-9fc8214.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Steak & broccoli protein pots picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>19 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>385</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/steak-broccoli-protein-pots"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Steak & broccoli protein pots','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#lunch_menu"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#lunch_menu"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </aside>
+
+        <aside id="supper_menu" class="carousel slide">
+          <h2>Supper Recipes</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container_recipe">
+                <h2>Burrito Zucchini Boats</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://hips.hearstapps.com/hmg-prod/images/delish-zucchini-burrito-boats-horizontal-1-1535729324.png?crop=0.564xw:1.00xh;0.219xw,0&resize=360:*"
+                  alt="Burrito Zucchini Boats picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>6 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>45 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>473</p>
+                  <a
+                    href="https://www.delish.com/cooking/recipe-ideas/a19757076/burrito-zucchini-boats-recipe/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Burrito Zucchini Boats','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Chicken Fajitas</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://hips.hearstapps.com/hmg-prod/images/chicken-fajitas-secondary-649de79c47172.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                  alt="Chicken Fajitas pictue"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>6 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>1 hr</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>243</p>
+                  <a
+                    href="https://www.delish.com/cooking/recipe-ideas/a19665622/easy-chicken-fajitas-recipe/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Chicken Fajitas','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Brown Sugar BBQ Chicken</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://hips.hearstapps.com/hmg-prod/images/brown-sugar-bbq-chicken-secondary-64d3a1d312941.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                  alt="Brown Sugar BBQ Chicken picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>6 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>4 hrs 15 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>549</p>
+                  <a
+                    href="https://www.delish.com/cooking/recipe-ideas/recipes/a47545/brown-sugar-bbq-chicken-recipe/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Brown Sugar BBQ Chicken','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Crockpot Salsa Chicken</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://hips.hearstapps.com/hmg-prod/images/delish-202001-salsa-chicken-0445-portrait-pf-1580338890.jpg?crop=1.00xw:0.667xh;0,0.153xh&resize=1200:*"
+                  alt="Crockpot Salsa Chicken picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>6 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>5 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>3 hrs 15 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>246</p>
+                  <a
+                    href="https://www.delish.com/cooking/recipe-ideas/a30519954/crockpot-salsa-chicken-recipe/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Crockpot Salsa Chicken','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>One-Pan Salsa Verde Shrimp & Rice</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://hips.hearstapps.com/hmg-prod/images/210623-delish-quarterly-salsa-verde-shrimp-and-rice-horizontal-no-hands-0182-eb-1625266727.jpg?crop=0.736xw:0.694xh;0.00680xw,0.161xh&resize=1200:*"
+                  alt="One-Pan Salsa Verde Shrimp & Rice picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>4 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>40 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>163</p>
+                  <a
+                    href="https://www.delish.com/cooking/recipe-ideas/a36917609/one-pan-salsa-verde-shrimp-and-rice-recipe/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('One-Pan Salsa Verde Shrimp & Rice','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#supper_menu"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#supper_menu"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </aside>
+
+        <aside id="dessert_menu" class="carousel slide">
+          <h2>Dessert Recipes</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container_recipe">
+                <h2>Instant frozen berry yogurt</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1029452_10-563fda8.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Instant frozen berry yogurt picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>4 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>5 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>5 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>80</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/instant-frozen-berry-yogurt"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Instant frozen berry yogurt','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Vegan protein pancakes</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/protein-4923259.jpg?quality=90&webp=true&resize=375,341"
+                  alt="Vegan protein pancakes picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>20 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>40 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>798</p>
+                  <a
+                    href="https://www.bbcgoodfood.com/recipes/protein-pancake-stack"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Vegan protein pancakes','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Protein Mug Cake Recipe</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://thebigmansworld.com/wp-content/uploads/2015/09/high-protein-brownie-2.jpg"
+                  alt="Protein Mug Cake Recipe picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>1 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>2 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>128</p>
+                  <a
+                    href="https://thebigmansworld.com/the-ultimate-1-minute-protein-brownie/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Protein Mug Cake Recipe','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Chocolate Cottage Cheese Pudding</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://nadiashealthykitchen.com/wp-content/uploads/2024/03/protein-chocolate-cottage-cheese-pudding_square-300x300.jpg"
+                  alt="Chocolate Cottage Cheese Pudding picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>4hrs 10min</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>410 kcal</p>
+                  <a
+                    href="https://nadiashealthykitchen.com/chocolate-cottage-cheese-pudding-high-protein-healthy/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Chocolate Cottage Cheese Pudding','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Protein Ice Cream</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://www.eatingbirdfood.com/wp-content/uploads/2021/08/protein-ice-cream-bowl-together-300x300.jpg"
+                  alt="Protein Ice Cream pictue"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>160</p>
+                  <a href="https://www.eatingbirdfood.com/protein-ice-cream/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Protein Ice Cream','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#dessert_menu"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#dessert_menu"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </aside>
+
+        <aside id="snacks_menu" class="carousel slide">
+          <h2>Snack Recipes</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container_recipe">
+                <h2>Protein balls</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://media.delight.video/0c18e53b610964fac175fe0e757adc30557e79b7/de4aafeb705db17fe10dd34a34ea9ede19355bc0/POSTER_USER/v0/de4aafeb705db17fe10dd34a34ea9ede19355bc0.jpeg?quality=90"
+                  alt="Protein balls picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>Makes 15 balls</p>
+                  <h4>PREP TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>15 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>128</p>
+                  <a href="https://www.bbcgoodfood.com/recipes/protein-balls"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Protein balls','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Chocolate Peanut Butter Smoothie</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://www.eatingbirdfood.com/wp-content/uploads/2021/05/chocolate-peanut-butter-smoothie-hero-300x300.jpg"
+                  alt="Chocolate Peanut Butter Smoothie picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>2 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>5 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>5 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>293</p>
+                  <a
+                    href="https://www.eatingbirdfood.com/peanut-butter-cup-smoothie-with-hemp-protein/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Chocolate Peanut Butter Smoothie','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Savoury Courgette Muffins</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://static.thcdn.com/images/v2/wp-content/uploads/sites/478/2017/01/28031215/courgette-cake.jpg?width=700"
+                  alt="Savoury Courgette Muffins picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>6 muffins</p>
+                  <h4>PREP TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>10 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>100</p>
+                  <a
+                    href="https://www.myprotein.com/thezone/nutrition/guilt-free-recipes-top-8-healthy-snack-ideas/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Savoury Courgette Muffins','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Spinach and Goat Cheese Egg Muffins</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://hips.hearstapps.com/hmg-prod/images/spinach-cheese-pepper-egg-muffins-1553890147.png?crop=1.00xw:0.764xh;0,0.165xh&resize=1200:*"
+                  alt="Spinach and Goat Cheese Egg Muffins picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>12 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>45 mins</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>45 mins</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>65</p>
+                  <a
+                    href="https://www.prevention.com/food-nutrition/recipes/a26991201/spinach-goat-cheese-egg-muffins-recipe/"
+                    >Click here to see the recipe</a
+                  ><button
+                    class="save-btn"
+                    onclick="saveButton('Spinach and Goat Cheese Egg Muffins','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container_recipe">
+                <h2>Biltong</h2>
+                <img
+                  class="recipe_pictures"
+                  src="https://www.boerandbutcher.co.za/wp-content/uploads/2019/09/BILTONG.jpg"
+                  alt="Biltong Picture"
+                />
+                <div>
+                  <h4>YIELDS:</h4>
+                  <p>5 serving(s)</p>
+                  <h4>PREP TIME:</h4>
+                  <p>20 min</p>
+                  <h4>TOTAL TIME:</h4>
+                  <p>more than a week</p>
+                  <h4>CAL/SERV:</h4>
+                  <p>200</p>
+                  <a
+                    href="https://www.boerandbutcher.co.za/the-basic-biltong-recipe/"
+                    >Click here to see the recipe</a
+                  >
+                  <button
+                    class="save-btn"
+                    onclick="saveButton('Biltong','recipe')"
+                  >
+                    Save for later
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#snacks_menu"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#snacks_menu"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </aside>
+      </div>
+    </main>
+
+    <!--Footer seperates the content within from the main and header -->
+    <footer>
+      <table>
+        <tr>
+          <th>How to contact me:</th>
+          <th>Subcribe to our news letter</th>
+        </tr>
+
+        <tr>
+          <td>
+            <li>E-mail: mjpether7@gmail.com</li>
+            <li>Contact no. : +27 66 222 6211</li>
+            <li>
+              Linkedin:
+              <a href="https://www.linkedin.com/in/m-j-pether-150793301/"
+                >https://www.linkedin.com/in/m-j-pether-150793301/</a
+              >
+            </li>
+          </td>
+          <td>
+            In our news letter you will get e-mailed weekly updates on reviews
+            about new and quick healthy recipes you can enjoy on a day to day
+            bases <a href="reviews.html"><button>SIGN UP</button></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+
+    <!--Links to the javascript file -->
+    <script type="text/javascript" src="../styles/save.js"></script>
+  </body>
+</html>

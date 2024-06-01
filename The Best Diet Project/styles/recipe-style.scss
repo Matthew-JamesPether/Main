@@ -1,0 +1,95 @@
+//colour variables that store the exact colours I need
+$main-colour-orange: rgb(255, 148, 41);
+$main-colour-yellow: #f6ebbd;
+
+//gives any element a width and height when excuted
+@mixin box($w-pixels, $h-pixels) {
+  width: $w-pixels;
+  height: $h-pixels;
+}
+
+//Styles the button element when excuted
+@mixin buttonbox() {
+  @include box(50px, 50px);
+  margin: 15px;
+  position: absolute;
+  top: 235px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+//Styles the main element in the recipe.html
+#recipe-main {
+  background-color:$main-colour-yellow;
+  .wrapper {
+    padding: 1em 0em 1em 0em;
+    display: grid;
+    grid-template-rows: repeat(5, 500px);
+    grid-gap: 1em;
+
+    //Styles all the aside content
+    aside {
+      border-style: solid;
+      border-radius: 15px;
+      background-color: $main-colour-orange;
+
+      h2{
+        font-family: fantasy;
+      }
+    }
+
+    .carousel-control-prev {
+      @include buttonbox();
+    }
+
+    .carousel-control-next {
+      @include buttonbox();
+    }
+
+    .carousel-item {
+      padding: 10px 60px 20px 60px;
+    }
+
+    .container_recipe {
+      border-style: solid;
+      border-width: 1px 0px 1px 0px;
+      display: grid;
+      grid-template-rows: 50px 370px;
+      grid-template-columns: 50% 50%;
+
+      h2 {
+        font-family: sans-serif;
+        grid-area: 1 / 1 / 2 / 3;
+      }
+
+      div {
+        grid-area: 2 / 2 / 3 / 3;
+        text-align: center;
+
+        a{
+            color: rgb(17, 7, 193);
+        }
+      }
+    }
+
+    #breakfast_menu {
+      grid-row: 1 / 2;
+    }
+
+    #lunch_menu {
+      grid-row: 2 / 3;
+    }
+
+    #supper_menu {
+      grid-row: 3 / 4;
+    }
+
+    #dessert_menu {
+      grid-row: 4 / 5;
+    }
+
+    #snacks_menu {
+      grid-row: 5 / 6;
+    }
+  }
+}
